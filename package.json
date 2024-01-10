@@ -1,0 +1,22 @@
+{
+  "name": "api_nodejs",
+  "version": "1.0.0",
+  "description": "Curso básico de APIs com Nodejs + Express + Mongodb",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevKaue/Curso_Udemy_Node.git"
+  },
+  "author": "Kaue Wendt Sabino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevKaue/Curso_Udemy_Node/issues"
+  },
+  "homepage": "https://github.com/DevKaue/Curso_Udemy_Node#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
