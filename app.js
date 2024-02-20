@@ -4,11 +4,10 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 //string de conexao: mongodb+srv://usuario_admin:<password>@clusterapi.9dnc6k6.mongodb.net/?retryWrites=true&w=majority
-//mongodb+srv://usuario_admin:Kaue132302@cluster0.tiqrs.mongodb.net/?retryWrites=true&w=majority
-//mongodb+srv://usuario_admin:Kaue132302@cluster0.tiqrs.mongodb.net/sms-api?retryWrites=true&w=majority
+//mongodb+srv://usuario_admin:Kaue132302@clusterapi.9dnc6k6.mongodb.net/?retryWrites=true&w=majority
 
 //CONFIGURAÇÕES DO MONGODB
-const url = 'mongodb+srv://usuario_admin:Kaue132302@cluster0.tiqrs.mongodb.net/cluster0?retryWrites=true&w=majority';
+const url = 'mongodb+srv://usuario_admin:Kaue132302@clusterapi.9dnc6k6.mongodb.net/?retryWrites=true&w=majority';
 // const options = {useNewUrlParser: true};
 
 mongoose.connect(url);
