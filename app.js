@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 //string de conexao: mongodb+srv://usuario_admin:<password>@clusterapi.9dnc6k6.mongodb.net/?retryWrites=true&w=majority
 //CONFIGURAÇÕES DO MONGODB
-const url = '';
+const url = 'mongodb+srv://kauesabino:gQlcCJ8YHSdCi1JB@cluster0.crjvegz.mongodb.net/';
 // const options = {useNewUrlParser: true};
 
 mongoose.connect(url);
