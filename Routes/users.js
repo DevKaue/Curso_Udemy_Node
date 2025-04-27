@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Users = require('../Models/user');
-
+const bcrypt = require('bcrypt')
 // router.get('/', (req,res) => {
 //     Users.find({}).exec((err,data) => {
 //         if(err) return res.send({error: 'Erro na consulta de usuários!'})
