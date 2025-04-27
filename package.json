@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/DevKaue/Curso_Udemy_Node#readme",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "body-parse": "^0.1.0",
     "express": "^4.18.2",
     "mongodb": "^6.3.0",
