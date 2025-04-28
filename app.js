@@ -2,14 +2,15 @@ const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const configs = require('./Config/config');
 
 //string de conexao: mongodb+srv://usuario_admin:<password>@clusterapi.9dnc6k6.mongodb.net/?retryWrites=true&w=majority
-
 //CONFIGURAÇÕES DO MONGODB
-const url = 'mongodb+srv://usuario_admin:Kaue132302@clusterapi.9dnc6k6.mongodb.net/?retryWrites=true&w=majority';
-const options = {useNewUrlParser: true};
+const url = configs.bd_string;
+// const options = { reconnecTries: Number.MAX_VALUE, reconnecInterval: 500, poolSize: 5, useNewUrlParser: true};
+// const options = {useNewUrlParser: true};
 
-mongoose.connect(url, options);
+mongoose.connect(url);
 // mongoose.set('useCreateIndex', true);
 
 mongoose.connection.on('error', (err)  => {
@@ -31,6 +32,7 @@ app.use(bodyParser.json());
 //ROTAS
 const indexRoute = require('./Routes/index');
 const usersRoute = require('./Routes/users');
+const config = require('./Config/config');
 
 app.use('/', indexRoute);
 app.use('/users', usersRoute);
