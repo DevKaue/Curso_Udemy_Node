@@ -1,4 +1,4 @@
-const env = process.env.NODE_ENV || 'dev';
+const env = process.env.NODE_ENV || 'prod';
 
 const config = () => {
     switch (env) {
