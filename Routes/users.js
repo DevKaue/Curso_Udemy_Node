@@ -3,6 +3,7 @@ const router = express.Router();
 const Users = require('../Models/user');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const configs = require('../Config/config');
 // router.get('/', (req,res) => {
 //     Users.find({}).exec((err,data) => {
 //         if(err) return res.send({error: 'Erro na consulta de usuários!'})
@@ -61,7 +62,7 @@ const jwt = require('jsonwebtoken');
 //Funções Auxiliares
 
 const createUserToken = (userId) => {
-    return jwt.sign({ id: userId }, 'kaue123', {expiresIn: '7d'});
+    return jwt.sign({ id: userId }, configs.jwt_pass, {expiresIn: configs.jwt_expires});
 }
 
 router.get('/', async(req, res) => {
