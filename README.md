@@ -7,7 +7,7 @@ Curso básico de APIs com Nodejs + Express + Mongodb
  *npm run dev
 
 - Recursos e Bibliotecas utilizadas
- # Nodemon para acompanhamento de execução da Aplicação
- # Bcrypt para criptografia da senha
- # Jsonwebtoken para realizar autenticacao jwt
- # Express
+ * Nodemon para acompanhamento de execução da Aplicação
+ * Bcrypt para criptografia da senha
+ * Jsonwebtoken para realizar autenticacao jwt
+ * Express
