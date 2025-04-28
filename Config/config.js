@@ -1,4 +1,4 @@
-const env = process.env.NODE_ENV || 'prod';
+const env = (process.env.NODE_ENV || 'production').toLowerCase();
 
 const config = () => {
     switch (env) {
@@ -14,7 +14,7 @@ const config = () => {
                 jwt_pass: '',
                 jwt_expires: ''
             };
-        case 'prod':
+        case 'production':
             return {
                 bd_string: 'mongodb+srv://kauesabino:gQlcCJ8YHSdCi1JB@cluster0.crjvegz.mongodb.net/',
                 jwt_pass: 'kahnsbvfkanbfuyagb2974yçaojflha7gahl8g3flag7faw7fg3lf',
